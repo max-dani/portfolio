@@ -10,6 +10,12 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import dynamic from 'next/dynamic';
+
+const CanvasRevealEffect = dynamic(
+  () => import('@/components/ui/CanvasRevealEffect').then(mod => mod.CanvasRevealEffect),
+  { ssr: false }
+);
 
 const Home = () => {
   return (
