@@ -1,21 +1,14 @@
 "use client";
 
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
-
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
-import Footer from "@/components/Footer";
-import Clients from "@/components/Clients";
-import Approach from "@/components/Approach";
-import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import dynamic from 'next/dynamic';
-
-const CanvasRevealEffect = dynamic(
-  () => import('@/components/ui/CanvasRevealEffect').then(mod => mod.CanvasRevealEffect),
-  { ssr: false }
-);
+import Clients from "@/components/Clients";
+import Experience from "@/components/Experience";
+import Approach from "@/components/Approach";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
